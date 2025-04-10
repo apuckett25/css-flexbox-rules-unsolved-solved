@@ -8,6 +8,7 @@
     <title>Login and Signup</title>
   </head>
   <body class="bg-white">
+    <!-- Main Header -->
     <header class="exercise-header">
       <nav class="top-nav">
         <h1>Authentication page</h1>
@@ -21,14 +22,18 @@
         </ul>
       </nav>
     </header>
+    <!-- End of Main Header -->
     <div class="content">
+      <!-- Sign-In -->
       <div id="sign-in">
+        <!-- Header -->
         <div class="form-header">
           <h2>Sign in</h2>
           <p class="subtext">for existing users</p>
         </div>
         <!-- Sign IN form starts here -->
         <form id="sign-in-form">
+          <!-- Email -->
           <div class="form-input-control">
             <label for="login-field">Login</label>
             <input
@@ -38,6 +43,7 @@
               required
             />
           </div>
+          <!-- Password -->
           <div class="form-input-control">
             <label for="password-field">Password</label>
             <input
@@ -48,11 +54,14 @@
               required
             />
           </div>
+          <!-- Checkbox -->
           <div class="form-checkbox-control">
             <input type="checkbox" id="stay-signed-in" />
             <label for="stay-signed-in">Stay signed in</label>
           </div>
+          <!-- Divider -->
           <hr />
+          <!-- Submit & Forgot Password Buttons -->
           <div class="form-submit-control">
             <input type="submit" value="Sign in" />
             <a href="/#">Forgot your password?</a>
@@ -60,13 +69,18 @@
         </form>
         <!-- Sign IN form ends here -->
       </div>
+      <!-- End of Sign-In -->
+
+      <!-- Sign-Up Begins -->
       <div id="sign-up">
+        <!-- Header -->
         <div class="form-header">
           <h2>Sign up</h2>
           <p class="subtext">for new users</p>
         </div>
         <!-- Sign UP form starts here -->
         <form id="sign-up-form">
+          <!-- Name -->
           <div class="form-input-control">
             <label for="name-field">Your name</label>
             <input
@@ -77,6 +91,7 @@
               required
             />
           </div>
+          <!-- Email -->
           <div class="form-input-control">
             <label for="email">Email</label>
             <input
@@ -86,6 +101,7 @@
               required
             />
           </div>
+          <!-- Password -->
           <div class="form-input-control">
             <label for="password">Password</label>
             <input
@@ -97,6 +113,7 @@
               required
             />
           </div>
+          <!-- Confirm Password -->
           <div class="form-input-control">
             <label for="confirm-password">Confirm Password</label>
             <input
@@ -108,6 +125,7 @@
               required
             />
           </div>
+          <!-- Phone Number -->
           <div class="form-input-control">
             <label for="phone">Phone number</label>
             <input
@@ -116,12 +134,16 @@
               minlength="12"
               maxlength="12"
               placeholder="ex.: +12336456355"
+              required
             />
           </div>
+          <!-- Avatar Picture -->
           <div class="form-input-control">
             <label for="avatar">Avatar</label>
             <input type="file" id="avatar" />
           </div>
+
+          <!-- State -->
           <div class="form-group-horizontal-control">
             <div class="form-input-control">
               <label for="state">State</label>
@@ -132,6 +154,7 @@
                 <option value="SD">South Dakota</option>
               </select>
             </div>
+            <!-- City -->
             <div class="form-input-control">
               <label for="city">City</label>
               <select id="city">
@@ -142,6 +165,7 @@
               </select>
             </div>
           </div>
+          <!-- Gender -->
           <div class="form-input-control">
             <p>Gender</p>
             <div class="form-group-vertical-control">
@@ -166,12 +190,14 @@
             </div>
           </div>
           <hr />
+          <!-- Sign up Button -->
           <div class="form-submit-control">
             <input type="submit" value="Sign up" />
           </div>
         </form>
         <!-- Sign UP form ends here -->
       </div>
+      <!-- End of Sign-Up -->
     </div>
   </body>
 </html>
